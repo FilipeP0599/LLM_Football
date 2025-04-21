@@ -1,0 +1,13 @@
+# save_base_model.py
+
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+model_name = "mistralai/Mistral-7B-v0.1"
+
+# Load from Hugging Face
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForCausalLM.from_pretrained(model_name)
+
+# Save locally
+model.save_pretrained("model/base_model")
+tokenizer.save_pretrained("model/base_model")
