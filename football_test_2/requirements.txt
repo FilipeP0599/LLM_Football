@@ -1,5 +1,5 @@
+torch
 transformers
 peft
-torch
+bitsandbytes
 accelerate
-streamlit
