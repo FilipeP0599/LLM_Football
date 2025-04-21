@@ -1,6 +1,6 @@
-streamlit
 transformers
-torch
 peft
+torch
+accelerate
 bitsandbytes
-huggingface_hub
+streamlit
